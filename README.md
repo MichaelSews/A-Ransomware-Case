@@ -1,3 +1,4 @@
+
 # A-Ransomware-Case
 
 ## Objective
@@ -21,5 +22,5 @@ In the midst of this high-pressure scenario, a ransomware attack unfolds. 😱 T
 
 ## Steps
 
-https://github.com/user-attachments/files/26615174/A.Ransomware.Investigation.md
+[A Ransomware Investigation.md](https://github.com/user-attachments/files/27104172/A.Ransomware.Investigation.md)
 
